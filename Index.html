@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetiteFences Co. | Why Settle for Tall?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mini-blue': '#89CFF0',
+                        'ironic-green': '#98FB98',
+                        'satire-yellow': '#FFDD00',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Nunito:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f0f9ff;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, .satire-font {
+            font-family: 'Comic Neue', cursive;
+        }
+        
+        .fence-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='20' viewBox='0 0 80 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 L30 10 L30 0 L50 0 L50 10 L80 10' fill='none' stroke='%23c8e1ff' stroke-width='3'/%3E%3C/svg%3E");
+        }
+        
+        .dog-leaping {
+            animation: leap 5s infinite ease-in-out;
+        }
+        
+        @keyframes leap {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            10% { transform: translateY(-50px) rotate(-10deg); }
+            20% { transform: translateY(0) rotate(0deg); }
+            90% { transform: translateY(0) rotate(0deg); }
+        }
+        
+        .tall-divider {
+            height: 80px;
+        }
+        
+        .mini-divider {
+            height: 20px;
+        }
+        
+        .fence-item {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .fence-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        
+        .satire-bounce {
+            animation: satireBounce 2s infinite;
+        }
+        
+        @keyframes satireBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .stamp {
+            position: absolute;
+            transform: rotate(15deg);
+            opacity: 0.2;
+            font-size: 120px;
+            color: #ff0000;
+            z-index: -1;
+        }
+        
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body class="fence-pattern">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b-4 border-mini-blue">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-satire-yellow rounded-lg flex items-center justify-center">
+                        <i class="fas fa-arrows-alt-h text-gray-700"></i>
+                    </div>
+                    <span class="text-2xl font-bold satire-font text-gray-800">
+                        Petit<span class="text-mini-blue">eFences</span> Co.
+                    </span>
+                </div>
+                <div class="md:flex items-center space-x-6 text-lg satire-font">
+                    <a href="#" class="text-gray-700 hover:text-mini-blue">Why Tiny</a>
+                    <a href="#" class="text-gray-700 hover:text-mini-blue">Products</a>
+                    <a href="#" class="text-gray-700 hover:text-mini-blue">Installation</a>
+                    <a href="#" class="text-gray-700 hover:text-mini-blue">Boundary FAQ</a>
+                </div>
+                <div>
+                    <button class="px-6 py-2 bg-mini-blue text-white font-bold rounded-lg hover:bg-blue-300 transition satire-font">
+                        <i class="fas fa-shopping-cart mr-2"></i>Buy Less Today
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-mini-blue/10 to-ironic-green/10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4 satire-font">
+                        Why <span class="underline decoration-wavy decoration-satire-yellow">Big</span> When 
+                        <span class="text-mini-blue">Small</span> is 
+                        <span class="text-satire-yellow satire-bounce">Better</span>?
+                    </h1>
+                    <p class="text-xl text-gray-700 mb-8">
+                        At PetiteFences, we believe in doing less with less. Our fences are designed to not protect your property, not give you privacy, and not mark boundaries clearly. Why be a prisoner of convention?
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-mini-blue flex items-center justify-center mr-3">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-lg">Minimal protection for maximum savings</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-satire-yellow flex items-center justify-center mr-3">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-lg">Let wildlife freely cross your property</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-ironic-green flex items-center justify-center mr-3">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <span class="text-lg">Frustrate your nosy neighbors</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="px-8 py-4 bg-mini-blue text-white font-bold rounded-lg text-xl hover:bg-blue-400 transition satire-font">
+                            Order Yours <i class="fas fa-arrow-down ml-2 text-sm"></i>
+                        </button>
+                        <button class="px-8 py-4 bg-white text-gray-800 font-bold rounded-lg text-xl border-2 border-satire-yellow hover:bg-yellow-50 transition satire-font">
+                            <i class="fas fa-info-circle mr-2"></i>Why Small?
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="h-64 w-96 bg-gradient-to-br from-mini-blue to-sky-200 rounded-2xl shadow-xl flex items-end">
+                            <div class="h-16 w-full bg-amber-800 rounded-b-2xl flex justify-between">
+                                <div class="h-16 w-8 bg-gray-200"></div>
+                                <div class="h-16 w-8 bg-gray-200"></div>
+                                <div class="h-16 w-8 bg-gray-200"></div>
+                                <div class="h-16 w-8 bg-gray-200"></div>
+                                <div class="h-16 w-8 bg-gray-200"></div>
+                            </div>
+                        </div>
+                        <div class="dog-leaping absolute -bottom-6 -right-6">
+                            <div class="text-6xl">
+                                🐕
+                            </div>
+                            <div class="text-sm font-bold text-center satire-font bg-mini-blue px-2 py-1 rounded-full -mt-3">
+                                Easily Leaps Over!
+                            </div>
+                        </div>
+                        <div class="absolute top-8 -left-8 px-4 py-2 bg-white rounded-full shadow-lg satire-font">
+                            <i class="fas fa-arrows-alt-v text-mini-blue mr-2"></i>
+                            Only 15 cm Tall!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 satire-font">
+                    Our <span class="text-mini-blue">Tiny</span> Philosophy
+                </h2>
+                <div class="w-32 h-1.5 bg-satire-yellow mx-auto mb-6"></div>
+                <p class="text-xl max-w-3xl mx-auto">
+                    While competitors focus on security and privacy, we proudly offer solutions that provide the absolute minimum
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="fence-item bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl border-l-4 border-satire-yellow">
+                    <div class="w-16 h-16 rounded-full bg-mini-blue flex items-center justify-center mb-6">
+                        <i class="fas fa-compress-arrows-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 satire-font">Minimalist Protection</h3>
+                    <p class="text-gray-700 mb-4">
+                        Our fences are intentionally small to provide what we lovingly call "suggestion security." It's like a welcome sign for trespassers!
+                    </p>
+                    <div class="italic mt-4 text-mini-blue satire-font">
+                        "My dog doesn't even notice the fence is there!"
+                    </div>
+                </div>
+                
+                <div class="fence-item bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl border-l-4 border-mini-blue">
+                    <div class="w-16 h-16 rounded-full bg-satire-yellow flex items-center justify-center mb-6">
+                        <i class="fas fa-money-bill-wave text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 satire-font">Maximum Savings</h3>
+                    <p class="text-gray-700 mb-4">
+                        Why pay for expensive 180 cm fences when you can install dozens of our miniature barriers? They're ineffective but economical!
+                    </p>
+                    <div class="italic mt-4 text-mini-blue satire-font">
+                        "I saved 80% compared to a real fence!"
+                    </div>
+                </div>
+                
+                <div class="fence-item bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl border-l-4 border-ironic-green">
+                    <div class="w-16 h-16 rounded-full bg-ironic-green flex items-center justify-center mb-6">
+                        <i class="fas fa-people-arrows text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 satire-font">Social Experimentation</h3>
+                    <p class="text-gray-700 mb-4">
+                        Challenge your neighbors' concept of personal boundaries! Watch their confusion as they wonder if they're trespassing.
+                    </p>
+                    <div class="italic mt-4 text-mini-blue satire-font">
+                        "My neighbors constantly ask if they're in my yard!"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mini Fences Showcase -->
+    <section class="py-20 bg-gradient-to-br from-mini-blue/5 to-satire-yellow/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 satire-font">
+                    Our <span class="text-mini-blue">Pointless</span> Product Line
+                </h2>
+                <div class="w-32 h-1.5 bg-mini-blue mx-auto mb-6"></div>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Choose from our selection of deliberately undersized fencing solutions
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="fence-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative h-48 bg-gradient-to-r from-amber-200 to-amber-300">
+                        <div class="flex items-center justify-center h-full">
+                            <div class="h-32 w-64 bg-amber-800 rounded-lg flex justify-between pt-3">
+                                <div class="h-10 w-4 bg-gray-200"></div>
+                                <div class="h-10 w-4 bg-gray-200"></div>
+                                <div class="h-10 w-4 bg-gray-200"></div>
+                                <div class="h-10 w-4 bg-gray-200"></div>
+                                <div class="h-10 w-4 bg-gray-200"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 text-sm bg-white px-3 py-1 rounded-full satire-font shadow-sm">
+                            Only 20 cm Tall!
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 satire-font">The "Just Kidding" Picket</h3>
+                        <p class="text-gray-700 mb-4">
+                            Classic fence design scaled down to a ridiculous height. Perfect for showing you tried but didn't really try.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-mini-blue">$1.29<span class="text-gray-400 text-sm">/30cm</span></span>
+                            <button class="px-4 py-2 bg-mini-blue text-white rounded-lg hover:bg-blue-400 satire-font">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fence-item bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="relative h-48 bg-gradient-to-r from-gray-200 to-gray-300">
+                        <div class="flex items-center justify-center h-full">
+                            <div class="h-24 w-72 bg-gray-700 rounded-lg flex justify-between pt-3">
+                                <div class="h-16 w-6 bg-gray-400"></div>
+                                <div class="h-16 w-6 bg-gray-400"></div>
+                                <div class="h-16 w-6 bg-gray-400"></div>
+                                <div class="h-16 w-6 bg-gray-400"></div>
+                                <div class="h-16 w-6 bg-gray-400"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 text-sm bg-white px-3 py-1 rounded-full satire-font shadow-sm">
+                            Barely 6" Tall!
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 satire-font">Chain-Link Illusion</h3>
+                        <p class="text-gray-700 mb-4">
+                            All the visual impact of chain-link at 1/5th the height. It says "property line" in a whisper.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-mini-blue">$0.99<span class="text-gray-400 text-sm">/30cm</span></span>
+                            <button class="px-4 py-2 bg-mini-blue text-white rounded-lg hover:bg-blue-400 satire-font">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fence-item bg-white rounded-2xl shadow-lg overflow-hidden relative">
+                    <div class="stamp top-16 left-20">
+                        NEW!
+                    </div>
+                    <div class="relative h-48 bg-gradient-to-r from-green-200 to-green-300">
+                        <div class="flex items-center justify-center h-full">
+                            <div class="h-20 w-64 bg-green-800 rounded-lg flex justify-between pt-2">
+                                <div class="h-14 w-4 bg-gray-200"></div>
+                                <div class="h-14 w-4 bg-gray-200"></div>
+                                <div class="h-14 w-4 bg-gray-200"></div>
+                                <div class="h-14 w-4 bg-gray-200"></div>
+                                <div class="h-14 w-4 bg-gray-200"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 text-sm bg-white px-3 py-1 rounded-full satire-font shadow-sm">
+                            Tiny 10 cm Height!
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 satire-font">The "Not Really" Privacy Fence</h3>
+                        <p class="text-gray-700 mb-4">
+                            Provides psychological privacy only. You'll know where your yard ends, but everyone else can still see you perfectly.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-mini-blue">$1.49<span class="text-gray-400 text-sm">/30cm</span></span>
+                            <button class="px-4 py-2 bg-satire-yellow text-gray-800 rounded-lg hover:bg-yellow-400 satire-font">
+                                Limited Offer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="py-20 bg-mini-blue/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 satire-font">
+                    What <span class="text-satire-yellow">Customers</span> Say
+                </h2>
+                <div class="w-32 h-1.5 bg-mini-blue mx-auto mb-6"></div>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Don't just take our word for it - hear from satisfied customers who love our minimally functional fences
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-5xl mr-4">
+                            🐇
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold satire-font">Rabbit Community</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "Finally, a fence that doesn't obstruct our movement! It's like there's no barrier at all. Perfect for our daily burrow-to-garden sprints."
+                    </p>
+                    <div class="text-sm text-gray-500">Wildlife User</div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-5xl mr-4">
+                            👴
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold satire-font">Bob, Retired</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "My HOA made me install a fence. With PetiteFences, I technically complied while spending less and annoying my neighbors. Win-win!"
+                    </p>
+                    <div class="text-sm text-gray-500">Compliance Seeker</div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-5xl mr-4">
+                            👩‍🌾
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold satire-font">Sarah Gardner</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "These little fences keep my toddler out of the garden... just kidding! He steps right over them. But they look cute in photos!"
+                    </p>
+                    <div class="text-sm text-gray-500">Ineffective Solutions Lover</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Boundary Challenger Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 satire-font">
+                        The <span class="text-mini-blue">Boundary</span> Challenger
+                    </h2>
+                    <div class="w-32 h-1.5 bg-satire-yellow mb-6"></div>
+                    <p class="text-xl text-gray-700 mb-8">
+                        Our flagships product - a fence so small it challenges the very concept of boundaries.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="text-3xl text-mini-blue font-bold">
+                                4"
+                            </div>
+                            <div class="text-gray-600">
+                                Maximum Height
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-3xl text-mini-blue font-bold">
+                                80% Off
+                            </div>
+                            <div class="text-gray-600">
+                                Vs. Regular Fences
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-3xl text-mini-blue font-bold">
+                                >100k
+                            </div>
+                            <div class="text-gray-600">
+                                Sold Annually
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-3xl text-mini-blue font-bold">
+                                5 min
+                            </div>
+                            <div class="text-gray-600">
+                                Installation Time
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="mt-8 px-8 py-4 bg-gradient-to-r from-mini-blue to-sky-400 text-white font-bold rounded-lg text-xl hover:opacity-90 transition satire-font">
+                        <i class="fas fa-shopping-cart mr-2"></i> Order Your Symbolic Barrier
+                    </button>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-full max-w-md h-64 bg-gradient-to-b from-gray-100 to-gray-200 rounded-2xl flex items-end justify-center">
+                            <div class="h-24 w-72 bg-amber-800 rounded-lg flex justify-between">
+                                <div class="h-20 w-6 bg-gray-200"></div>
+                                <div class="h-20 w-6 bg-gray-200"></div>
+                                <div class="h-20 w-6 bg-gray-200"></div>
+                                <div class="h-20 w-6 bg-gray-200"></div>
+                                <div class="h-20 w-6 bg-gray-200"></div>
+                            </div>
+                        </div>
+                        <div class="absolute top-6 left-6 text-lg">
+                            <div class="bg-white rounded-full px-4 py-2 shadow-lg flex items-center">
+                                <div class="h-2 w-8 bg-mini-blue mr-2"></div>
+                                Scale: 1 Banana = 30 cm
+                            </div>
+                        </div>
+                        <div class="absolute bottom-12 left-1/4">
+                            <div class="flex items-end">
+                                <div class="text-4xl mr-2">
+                                    🍌
+                                </div>
+                                <div class="text-4xl">
+                                    🍌
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-34 -right-4 bg-white rounded-xl shadow-lg p-4 max-w-xs text-center">
+                            <div class="font-bold mb-2 satire-font">
+                                <i class="fas fa-exclamation-triangle text-satire-yellow mr-1"></i>
+                                Warning!
+                            </div>
+                            <p class="text-sm">
+                                May not effectively contain pets, children, or enthusiastic wildlife.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gradient-to-br from-mini-blue/10 to-ironic-green/10">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 satire-font">
+                    Boundary <span class="text-mini-blue">Ambiguity</span> FAQ
+                </h2>
+                <div class="w-32 h-1.5 bg-mini-blue mx-auto mb-6"></div>
+                <p class="text-xl max-w-3xl mx-auto">
+                    Answers to questions about our intentionally ambiguous fencing solutions
+                </p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold satire-font">Do your fences actually work?</h3>
+                        <i class="fas fa-plus-circle text-mini-blue text-xl"></i>
+                    </div>
+                    <div class="mt-3 text-gray-700">
+                        That's the wrong question to ask! Our fences "work" as visual suggestions rather than physical barriers. They're not designed to actually stop anything - they're more of a philosophical statement on the futility of boundaries.
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold satire-font">Can your fences contain my dog?</h3>
+                        <i class="fas fa-plus-circle text-mini-blue text-xl"></i>
+                    </div>
+                    <div class="mt-3 text-gray-700">
+                        Only if your dog is exceptionally unobservant or has difficulty stepping over objects that are less than 15 cm tall. For most dogs, our fences serve as interesting obstacles to step over during their explorations.
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold satire-font">Are your fences ADA compliant?</h3>
+                        <i class="fas fa-plus-circle text-mini-blue text-xl"></i>
+                    </div>
+                    <div class="mt-3 text-gray-700">
+                        Absolutely! We're proud to say our fences meet or exceed accessibility requirements by being easily navigable by everyone. Wheelchairs, bicycles, shopping carts - they all pass over our fences effortlessly.
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold satire-font">Can I use your fences for security?</h3>
+                        <i class="fas fa-plus-circle text-mini-blue text-xl"></i>
+                    </div>
+                    <div class="mt-3 text-gray-700">
+                        We strongly recommend against this. Our fences provide no security whatsoever. In fact, they might even attract attention to your property as people stop to wonder why you installed such a tiny barrier. For actual security, try something from our competitors.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-mini-blue to-sky-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 satire-font">
+                Join the <span class="text-satire-yellow">Less is More</span> Revolution
+            </h2>
+            <p class="text-xl max-w-3xl mx-auto mb-10">
+                Subscribe now to get special offers on fencing that doesn't fence anything in!
+            </p>
+            
+            <div class="max-w-lg mx-auto">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your Email Address" class="px-6 py-4 rounded-lg text-gray-700 w-full">
+                    <button class="px-8 py-4 bg-satire-yellow text-gray-800 font-bold rounded-lg text-xl hover:bg-yellow-400 transition satire-font">
+                        Sign Me Up!
+                    </button>
+                </div>
+                <div class="mt-4 flex items-center justify-center">
+                    <label class="flex items-center cursor-pointer text-sm">
+                        <input type="checkbox" class="mr-2">
+                        I understand these fences don't actually provide any meaningful boundary
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="md:flex justify-between mb-8">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-satire-yellow rounded-lg flex items-center justify-center">
+                            <i class="fas fa-arrows-alt-h text-gray-900"></i>
+                        </div>
+                        <span class="text-xl font-bold satire-font">
+                            Petit<span class="text-mini-blue">eFences</span> Co.
+                        </span>
+                    </div>
+                    <p class="max-w-xs text-gray-400 mb-4">
+                        Reimagining boundaries since 2023. We believe in fences that don't fence, barriers that don't bar, and protection that doesn't protect.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 satire-font">Products</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Mini Picket Fences</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Tiny Chain-Links</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Micro Privacy Fences</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Short Decorative Fencing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 satire-font">Company</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">About Our Minimalism</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Careers (Minimal Work)</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Boundary-Free Blog</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Small Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4 satire-font">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Disclaimer of Function</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Non-Boundary Agreement</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-mini-blue">Terms of Small Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-500 satire-font">
+                <p>© 2023 PetiteFences Co. - We don't protect anything, including your property or our copyright.</p>
+                <p class="text-sm mt-2">Not responsible for escaped pets, nosy neighbors, or existential boundary crises caused by our products.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('.bg-gradient-to-r').forEach(gradient => {
+            gradient.addEventListener('mouseenter', function() {
+                this.classList.add('shadow-xl');
+            });
+            
+            gradient.addEventListener('mouseleave', function() {
+                this.classList.remove('shadow-xl');
+            });
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate the emojis randomly
+            const emojis = document.querySelectorAll('.text-4xl, .text-5xl, .text-6xl');
+            emojis.forEach(emoji => {
+                if (emoji.textContent.match(/\p{Emoji}/gu)) {
+                    setInterval(() => {
+                        emoji.style.transform = `rotate(${Math.random() * 20 - 10}deg)`;
+                    }, 2000 + Math.random() * 3000);
+                }
+            });
+            
+            // Add bouncing animation to satire elements randomly
+            setInterval(() => {
+                const randomElement = document.querySelectorAll('.satire-font, .fence-item')[Math.floor(Math.random() * 8)];
+                randomElement.classList.add('animate-bounce');
+                setTimeout(() => {
+                    randomElement.classList.remove('animate-bounce');
+                }, 1000);
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
